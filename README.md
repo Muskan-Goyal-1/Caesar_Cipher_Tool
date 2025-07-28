@@ -42,16 +42,14 @@ You will need a C++ compiler, such as g++, installed on your system.
 
 Navigate to the directory containing the caesar.cpp file and compile it using the following command:
 
-sh
-g++ caesar.cpp -o caesar
+g++ caesar.cpp -o caesar.exe -static
 
 
 ### 2\. Execution
 
 Run the compiled program from your terminal:
 
-sh
-./caesar
+./caesar.exe
 
 
 ### 3\. On-Screen Instructions
@@ -65,13 +63,13 @@ The program will present a menu with the following options:
 #### Example Workflow
 
 1.  Run the program and select option 1 to encrypt.
-2.  *Enter text to encrypt*: Hello World 123!
+2.  *Enter text to encrypt*: Hello World@123!
 3.  The program outputs the encrypted text and your key. Let's assume the key is 852.
-      * *Encrypted Text*: Jgnnq Yqtnf 345!
+      * *Encrypted Text*: Jgnnq Yqtnf@345!
       * *Your 3-digit key (keep it safe\!)*: 852
 4.  To decrypt, select option 2.
 5.  Calculate your Shift Key from the Public Key 852: 8 + 2 = 10.
-6.  *Enter the ciphered text*: Jgnnq Yqtnf 345!
+6.  *Enter the ciphered text*: Jgnnq Yqtnf@345!
 7.  *Enter the key*: 10
 8.  The program will output the original message:
-      * *Decrypted Text*: Hello World 123!
+      * *Decrypted Text*: Hello World@123!
